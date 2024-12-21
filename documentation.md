@@ -137,3 +137,54 @@ none // None of these
 ```
 
 If you create a variable whose initial value is a number, its type will default to `float` of it has a decimal point, or `int` otherwise.
+
+## Computations
+**List of mathematical functions in Lune:**
+```lune
+a+b a-b a*b a/b a%b a**b
+sqrt(a) cbrt(a) root(n, a)
+log(a) log(b, a) ln(a)
+constrain(n, lo, hi) abs(n)
+sin(n) cos(n) tan(n)
+asin(n) acos(n) atan(n)
+atan2(x, y)
+```
+
+**List of logical and bitwise functions:**
+```lune
+a&&b a||b a^^b
+!a a!&b a!|b a!^b
+a&b a|b a^b ~a
+```
+
+**List of comparison predicates:**
+```lune
+a==b a<b a>b
+a!=B a<=b a>=b
+a===b
+ternop(c, t, f) // similar to c?t:f
+```
+
+## Arrays
+The `array` keyword will return a list with a given length. All its values will be null.
+```lune
+array(10)
+```
+
+## Objects
+WIP
+
+## Strings
+WIP
+
+## Randomization
+WIP
+
+## Control
+WIP
+
+## Debugging
+WIP
+
+## Other
+WIP
