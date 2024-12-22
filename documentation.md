@@ -171,6 +171,66 @@ The `array` keyword will return a list with a given length. All its values will 
 array(10)
 ```
 
+To add an item to the end of an array, use `push`.
+```lune
+users.push("Harold")
+```
+To add an item somewhere else in an array, use `insert`.
+```lune
+users.insert("Harold", 5)
+```
+Note: array indices start at 0.
+
+To remove and return the item at the end of an array, use `pop`.
+```lune
+users.pop()
+```
+`pop` can also be used to remove and return different items in an array.
+```lune
+users.pop(5)
+```
+
+To get an item from an array:
+```lune
+users[5]
+```
+
+To replace an item in an array:
+```lune
+users[5] = "Harold"
+```
+To replace EVERY item in an array:
+```lune
+users.fill("Harold")
+```
+
+Arrays can be used as elements in other arrays. To flatten an array (that is, put all the elements of nested arrays into a single array), use `flat`.
+```
+users.flat(9)
+```
+
+To loop for each item in an array, use `foreach`.
+```lune
+users.foreach((user) => {
+    ...
+})
+```
+
+To get the length of an array, use `length`.
+```lune
+users.length
+```
+
+To test if an array has no items in it, use `isempty`.
+```lune
+users.isempty
+```
+
+The `find` keyword will search for an item in an array and return its index.
+```lune
+users.find("Harold")
+```
+
 ## Objects
 WIP
 
@@ -181,6 +241,9 @@ WIP
 WIP
 
 ## Control
+WIP
+
+## Functions
 WIP
 
 ## Debugging
