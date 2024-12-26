@@ -1,4 +1,4 @@
-[<img align="right" height="100" src="icons/netw-tiny.png">]()
+[<img align="right" height="70" src="icons/netw-large.png">]()
 # Lune
 A programming language made for both novice and advanced programmers.
 
